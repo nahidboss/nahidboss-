@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+   -ms-grid-row-align: center;
+   gap: 2px;
+   grid-auto-rows: minmax(400px,400px);
+   grid-template-areas: 
+   "h h h"
+   "manu mai mai "
+   "med con con"
+   "med con con "
+   /* "la f f " */
+   "foo foo foo"
+   ;
+
+}
+
+
+.head{
+grid-area: h;
+background-color: green;
+border: 1px solid red;
+
+
+}
+.head img{
+    width: 500px;
+    height: 400px;
+    transition: cover;
+    float: left;
+    border-radius: 10px;
+}
+.manu{
+    grid-area: manu;
+    background-color: rgb(23, 56, 23);
+ 
+}
+/* .manu img{
+ width: 100px;
+ height: 100px;
+} */
+.main{
+    grid-area: mai;
+    border: 1px solid green;
+}
+.main img{
+    width: 601px;
+    height: 459px;
+ transition: cover; 
+border-radius: 10px;
+ 
+}
+.meddel{
+    grid-area: med;
+   
+    border: 1px solid darkcyan;
+}
+.meddel img{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    border: 1px solid darkblue;
+}
+
+.contrac{
+    grid-area: con;
+   
+    border: 1px solid magenta;
+}
+.contrac img{
+    width: 602px;
+    height: 503px;
+    border-radius: 10px;
+
+}
+/* .last{
+    grid-area: la;
+    background-color: darkorange;
+} */
+/* .last img{
+    width: 100px;
+    height: 100px;
+
+} */
+/* .frist{
+    grid-area: f;
+    background-color: darkmagenta;
+} */
+/* .frist img{
+    width: 100px;
+    height: 100px;
+    
+} */
+.footer{
+    grid-area: foo;
+  grid-template-rows:  5fr / 5fr;
+    margin-bottom: 100px;
+    margin-top: 100px;
+
+}
+.footer img{
+  width: 1000px;
+  height: 1000px;
+ transform: cover;
+ transition: cover;
+
+   
+
+}
